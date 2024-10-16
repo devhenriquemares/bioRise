@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>BioRise - Denúncias</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./src/img/logo.ico" alt="logo da BioRise" id="logo">
+            <div class="titulo-empresa padrao">
+                <h1>BioRise</h1>
+            </div>
+        </header>
+        <section class="padrao" id="titulo">
+            <h1>Quem somos nós</h1>
+            <p>A BioRise é uma empresa que busca implementar diversas filiais de vigilância espalhadas entre os estados e países, visando ajudar o meio ambiente através da ajuda e apoio de todos. Com a colaboração de todos, esperamos que este site seja benéfico para que grande parte das ocorrências de desmatamento e/ou queimas sejam denunciadas aqui, e assim, nossa empresa fará sua parte com todo esforço possível.</p>
+        </section>
+        <form>
+            <section class="padrao" id="questionario">
+                <div class="quest-container">
+                    <div id="titulo">
+                        <h1>Insira sua denúncia</h1>
+                    </div>
+                    <div id="denuncia">
+                        <p>Dados pessoais</p>
+                    </div>
+                    <div id="top-questions">
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="CPF" onkeyup="formatarCPF(this)" maxlength="11">
+                        <input type="tel" placeholder= "Telefone [(xx) x xxxx-xxxx]" onkeyup="formatarTelefone(this)" maxlength="11">
+                    </div>
+                    <div id="tipo-denuncia"><p>Tipo da denúncia</p></div>
+                    <div id="denuncia-input">
+                        <label class="option">
+                            <input type="radio" name="environment" value="queima">
+                            <div class="input"></div>
+                            <div class="label"><p>Queima florestal</p></div>
+                        </label>
+                        <label class="option" id="desmatamento">
+                            <input type="radio" name="environment" value="desmatamento">
+                            <div class="input"></div>
+                            <div class="label"><p>Desmatamento</p></div>
+                        </label>
+                    </div>
+                    <section class="bottom-questions" id="local-ocorrencia">
+                        <div><p>Local da ocorrência</p></div>
+                        <input type="text" placeholder="Rua">
+                        <input type="text" placeholder="Bairro">
+                        <input type="text" placeholder="Complemento">
+                    </section>
+                    <section class="bottom-questions">
+                        <div><p>Descrição da ocorrência</p></div>
+                        <textarea name="descricao-ocorrencia" placeholder="Clique aqui para digitar"></textarea>
+                    </section>
+                    <section class="bottom-questions" id="desc-individuo">
+                        <div><p>Descrição do indivíduo causador</p></div>
+                        <textarea name="descricao-individuo" placeholder="Clique aqui para digitar"></textarea>
+                    </section>
+                    <div id="fim-questionario">
+                        <button type="submit">Enviar denúncia</button>
+                        <button type="reset">Limpar denúncia</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+        <footer class="padrao">
+            <p>Nosso telefone: 216 (24) 9 2176-5839</p>
+        </footer>
+    </div>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
